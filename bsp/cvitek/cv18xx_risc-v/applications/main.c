@@ -18,6 +18,8 @@
 #define LED_PIN     "C24" /* Onboard LED pins */
 #elif defined(BOARD_TYPE_MILKV_DUOS)
 #define LED_PIN     "A29" /* Onboard LED pins */
+#elif defined(BOARD_TYPE_LICHEERV_NANO)
+#define LED_PIN     "A14" /* Onboard LED pins */
 #endif
 
 int main(void)

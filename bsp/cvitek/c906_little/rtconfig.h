@@ -116,7 +116,7 @@
 #define RT_USING_CONSOLE
 #define RT_CONSOLEBUF_SIZE 512
 #define RT_CONSOLE_DEVICE_NAME "uart1"
-#define RT_VER_NUM 0x50201
+#define RT_VER_NUM 0x50300
 #define RT_BACKTRACE_LEVEL_MAX_NR 32
 /* end of RT-Thread Kernel */
 #define ARCH_CPU_64BIT
@@ -330,6 +330,14 @@
 /* GD32 Drivers */
 
 /* end of GD32 Drivers */
+
+/* HPMicro SDK */
+
+/* end of HPMicro SDK */
+
+/* FT32 HAL & SDK Drivers */
+
+/* end of FT32 HAL & SDK Drivers */
 /* end of HAL & SDK Drivers */
 
 /* sensors drivers */
@@ -425,6 +433,6 @@
 #define BSP_GPIO_IRQ_BASE 41
 #define BSP_SYS_GPIO_IRQ_BASE 47
 #define SOC_TYPE_SG2002
-#define BOARD_TYPE_MILKV_DUO256M
+#define BOARD_TYPE_LICHEERV_NANO
 
 #endif

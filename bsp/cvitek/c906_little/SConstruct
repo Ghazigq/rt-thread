@@ -40,6 +40,9 @@ if GetDepend('BOARD_TYPE_MILKV_DUO256M'):
 elif GetDepend('BOARD_TYPE_MILKV_DUOS'):
     env['LINKFLAGS'] = env['LINKFLAGS'].replace('cv180x_lscript.ld', 'cv1813h_lscript.ld')
     env['LINKFLAGS'] = env['LINKFLAGS'].replace('-L board/script/cv180x', '-L board/script/cv1813h')
+elif GetDepend('BOARD_TYPE_LICHEERV_NANO'):
+    env['LINKFLAGS'] = env['LINKFLAGS'].replace('cv180x_lscript.ld', 'cv181x_lscript.ld')
+    env['LINKFLAGS'] = env['LINKFLAGS'].replace('-L board/script/cv180x', '-L board/script/cv181x')
 
 # make a building
 DoBuilding(TARGET, objs)

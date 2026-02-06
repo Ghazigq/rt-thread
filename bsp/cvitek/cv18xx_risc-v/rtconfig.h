@@ -118,7 +118,7 @@
 #define RT_USING_CONSOLE
 #define RT_CONSOLEBUF_SIZE 256
 #define RT_CONSOLE_DEVICE_NAME "uart0"
-#define RT_VER_NUM 0x50201
+#define RT_VER_NUM 0x50300
 #define RT_USING_STDC_ATOMIC
 #define RT_BACKTRACE_LEVEL_MAX_NR 32
 /* end of RT-Thread Kernel */
@@ -207,9 +207,8 @@
 #define RT_SERIAL_USING_DMA
 #define RT_SERIAL_RB_BUFSZ 64
 #define RT_USING_SERIAL_BYPASS
-#define RT_USING_CPUTIME
-#define RT_USING_CPUTIME_RISCV
-#define CPUTIME_TIMER_FREQ 25000000
+#define RT_USING_CLOCK_TIME
+#define CLOCK_TIMER_FREQ 25000000
 #define RT_USING_NULL
 #define RT_USING_ZERO
 #define RT_USING_RANDOM
@@ -229,8 +228,6 @@
 #define RT_BLK_PARTITION_EFI
 /* end of Partition Types */
 #define RT_USING_PIN
-#define RT_USING_KTIME
-#define RT_USING_HWTIMER
 /* end of Device Drivers */
 
 /* C/C++ and POSIX layer */
@@ -500,6 +497,14 @@
 /* GD32 Drivers */
 
 /* end of GD32 Drivers */
+
+/* HPMicro SDK */
+
+/* end of HPMicro SDK */
+
+/* FT32 HAL & SDK Drivers */
+
+/* end of FT32 HAL & SDK Drivers */
 /* end of HAL & SDK Drivers */
 
 /* sensors drivers */
@@ -589,6 +594,8 @@
 #define BSP_UART0_RX_PINNAME "UART0_RX"
 #define BSP_UART0_TX_PINNAME "UART0_TX"
 #define BSP_UART_IRQ_BASE 44
+#define BSP_USING_SDH
+#define BSP_USING_ETH
 /* end of General Drivers Configuration */
 #define BSP_USING_CV18XX
 #define C906_PLIC_PHY_ADDR 0x70000000
@@ -597,7 +604,7 @@
 #define BSP_SYS_GPIO_IRQ_BASE 70
 #define __STACKSIZE__ 8192
 #define SOC_TYPE_SG2002
-#define BOARD_TYPE_MILKV_DUO256M
+#define BOARD_TYPE_LICHEERV_NANO
 #define BSP_ROOTFS_TYPE_DISKFS
 
 #endif

@@ -150,6 +150,7 @@ Board Type (milkv-duo)  --->
     ( ) milkv-duo
     (X) milkv-duo256m
     ( ) milkv-duos
+    ( ) LicheeRV-nano
 ```
 
 ### 4.3.2. 开启 RT-Smart

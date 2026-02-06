@@ -4,8 +4,8 @@
 function get_board_type()
 {
 	local project_path=$1
-	local supported_board_configs=("CONFIG_BOARD_TYPE_MILKV_DUO" "CONFIG_BOARD_TYPE_MILKV_DUO256M" "CONFIG_BOARD_TYPE_MILKV_DUOS")
-	local supported_board_types=("duo" "duo256m" "duos")
+	local supported_board_configs=("CONFIG_BOARD_TYPE_MILKV_DUO" "CONFIG_BOARD_TYPE_MILKV_DUO256M" "CONFIG_BOARD_TYPE_MILKV_DUOS" "CONFIG_BOARD_TYPE_LICHEERV_NANO")
+	local supported_board_types=("duo" "duo256m" "duos" "licheerv")
 
 	local board_type="N/A"
 
